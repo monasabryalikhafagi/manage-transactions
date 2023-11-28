@@ -7,9 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 use App\Models\Transaction;
 class TransactionRepository extends Repository
 {
-    public function __construct(Transaction $Transaction)
+    public function __construct(Transaction $transaction)
     {
-        $this->setModel($Transaction);
+        $this->setModel($transaction);
     }
 
 }

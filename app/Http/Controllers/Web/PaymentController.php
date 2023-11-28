@@ -1,13 +1,14 @@
 <?php 
 
-namespace App\Http\Controllers\Api;
+namespace App\Http\Controllers\Web;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Api\BaseApiController;
 use App\Http\Requests\PaymentRequest;
 use App\Http\Resources\PaymentResource;
 use App\Services\PaymentService;
-class PaymentController extends BaseApiController 
+use App\Http\Controllers\Controller;
+
+class PaymentController extends Controller 
 {
 
   private PaymentService $paymentService;
